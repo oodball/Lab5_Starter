@@ -17,7 +17,7 @@ function init() {
         hornAudio.src = './assets/audio/air-horn.mp3';
         play = 0;
         break;
-      case 'car-horn':
+      case 'car-horn': 
         hornImage.src = './assets/images/car-horn.svg';
         hornAudio.src = './assets/audio/car-horn.mp3';
         play = 0;

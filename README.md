@@ -1,4 +1,5 @@
-# Lab 5 - Starter Anny Zhao & Audrey Liang
+# Lab 5 - Starter 
+Anny Zhao & Audrey Liang
 
 [Link to Expose](https://oodball.github.io/Lab5_Starter/expose.html)
 
