@@ -49,10 +49,47 @@ test('email is ay at rocket dot com', () => {
 test('email is wow@', () => {
   expect(isEmail('wow@')).toBe(false);
 });
+
+// --------------------------------------------------------------------------------
+//isStrongPassword Tests - true
+test('password is abcd', () => {
+  expect(isStrongPassword('abcd')).toBe(true);
+});
+
+//isStrongPassword Tests - true
+test('password is a12_BcDe3', () => {
+  expect(isStrongPassword('a12_BcDe3')).toBe(true);
+});
+
+//isStrongPassword Tests - false
+test('password is 1ad', () => {
+  expect(isStrongPassword('1ad')).toBe(false);
+});
+
+//isStrongPassword Tests - false
+test('password is aaaaaaaa@aaaaaaa', () => {
+  expect(isStrongPassword('aaaaaaaa@aaaaaaa')).toBe(false);
+});
 // --------------------------------------------------------------------------------
 
-test('password is ay@rocket.com', () => {
-  expect(isStrongPassword('ay@rocket.com')).toBe(true);
+//isDate Tests - true
+test('Date is 1/2/3456', () => {
+  expect(isDate('1/2/3456')).toBe(true);
+});
+
+//isDate Tests - true
+test('Date is 01/02/0304', () => {
+  expect(isDate('01/02/0304')).toBe(true);
+});
+
+//isDate Tests - false
+test('Date is 111/1/1111', () => {
+  expect(isDate('111/1/1111')).toBe(false);
+});
+
+//isDate Tests - false
+test('Date is ///', () => {
+  expect(isDate('///')).toBe(false);
 });
 
 
