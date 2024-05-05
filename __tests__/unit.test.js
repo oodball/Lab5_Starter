@@ -7,26 +7,26 @@ import {
   isHexColor,
 } from '../code-to-unit-test/unit-test-me';
 
-// // isPhoneNumber Tests - True
-// test('phone number is (555) 555-5555', () => {
-//   expect(isPhoneNumber('(555) 555-5555')).toBe(true);
-// });
+// isPhoneNumber Tests - True
+test('phone number is (555) 555-5555', () => {
+  expect(isPhoneNumber('(555) 555-5555')).toBe(true);
+});
 
-// // isPhoneNumber Tests - True
-// test('phone number is (111)111-1111', () => {
-//   expect(isPhoneNumber('(111)111-1111')).toBe(true);
-// });
+// isPhoneNumber Tests - True
+test('phone number is (111)111-1111', () => {
+  expect(isPhoneNumber('(111)111-1111')).toBe(true);
+});
 
 
-// // isPhoneNumber Tests - false
-// test('phone number is (55) 5555555', () => {
-//   expect(isPhoneNumber('(55) 5555555')).toBe(false);
-// });
+// isPhoneNumber Tests - false
+test('phone number is (55) 5555555', () => {
+  expect(isPhoneNumber('(55) 5555555')).toBe(false);
+});
 
-// // isPhoneNumber Tests - false
-// test('phone number is 143455555905', () => {
-//   expect(isPhoneNumber('143455555905')).toBe(false);
-// });
+// isPhoneNumber Tests - false
+test('phone number is 143455555905', () => {
+  expect(isPhoneNumber('143455555905')).toBe(false);
+});
 
 //--------------------------------------------------------------------------------
 
@@ -92,4 +92,24 @@ test('Date is ///', () => {
   expect(isDate('///')).toBe(false);
 });
 
+// --------------------------------------------------------------------------------
 
+//isHexColor Tests - true
+test('Hex color is #143', () => {
+  expect(isHexColor('#143')).toBe(true);
+});
+
+//isHexColor Tests - true
+test('Hex color is #114433', () => {
+  expect(isHexColor('#114433')).toBe(true);
+});
+
+//isHexColor Tests - false
+test('Hex color is abcd', () => {
+  expect(isHexColor('abcd')).toBe(false);
+});
+
+//isHexColor Tests - false
+test('Hex color is #', () => {
+  expect(isHexColor('#')).toBe(false);
+});
